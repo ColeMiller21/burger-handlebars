@@ -1,0 +1,41 @@
+<h1 id="title">BURGER TIME</h1>
+
+<div id="image">
+    <img src="/assets/img/burger-pic2.png" alt="picture of burger" />
+</div>
+
+<div id="wrapper">
+    <div id="not-devoured">
+        <ul id="not-devoured-list">
+            {{#each burger}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured = true}}
+            {{/unless}}
+            {{/each}}
+
+        </ul>
+    </div>
+    <div id="is-devoured">
+        <ul id="devoured-list">
+            {{#each burger}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured = false}}
+            {{/if}}
+            {{/each}}
+
+        </ul>
+    </div>
+</div>
+
+
+<form id="create-burger">
+
+    <div class="create-input">
+        <input type="text" id="burger-input" name="burger_name">
+
+    </div>
+    <div id="button-div">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+
+</form>

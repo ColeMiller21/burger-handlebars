@@ -1,0 +1,72 @@
+body {
+    background-color: wheat;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px; 
+}
+#image {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#not-devoured{
+    background-color: wheat;
+    width: 50%;
+    flex: 0 50%;
+    margin: 0 auto;
+    text-align: center
+}
+#is-devoured {
+    background-color:wheat;
+    width: 50%;
+   flex: 1 50%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+#not-devoured-list,
+#devoured-list {
+    display: inline-block;
+}
+
+ul {
+ text-align: left;
+ width: 60%;
+}
+
+.burger-list {
+    margin: 10px;
+    list-style-type: none; 
+}
+
+#burger-input {
+    width: 250px;
+    height: 70px;
+}
+
+#button-div {
+    text-align: center;
+}
+
+#create-burger {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#submit {
+    margin-top: 10px;
+}
