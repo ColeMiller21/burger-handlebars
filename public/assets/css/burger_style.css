@@ -38,14 +38,17 @@ img {
    text-align: center;
 }
 
-#not-devoured-list,
-#devoured-list {
+#not-devoured-list{
     display: inline-block;
+    width: 60%;
+    text-align: right;
 }
 
-ul {
- text-align: left;
- width: 60%;
+
+#devoured-list {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
 }
 
 .burger-list {
@@ -69,4 +72,8 @@ ul {
 
 #submit {
     margin-top: 10px;
+}
+
+p {
+    text-align: center;
 }

@@ -6,7 +6,9 @@ $(document).ready(function () {
         var isDevoured = {
             devoured: true
         }
-
+        if (newDevoured) {
+            $(".change-devoured").css({ "display": "none" });
+        }
         // Send the POST request.
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
@@ -18,19 +20,15 @@ $(document).ready(function () {
                 // Reload the page to get the updated list
                 location.reload();
             }
-
         );
 
-        if (newDevoured) {
-            $(".changed-devoured").css({ "visibility": "hidden" });
-        }
+
     });
 
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
-        $("#is-devoured").css({ "display": "block" });
-        $("#not-devoured").css({ "display": "block" });
+
         var newBurger = {
             burger_name: $("#burger-input").val().trim(),
         };
